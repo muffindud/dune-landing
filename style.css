@@ -1,0 +1,32 @@
+body {
+    height: 2000px;
+}
+
+
+nav {
+    background-color: #000000;
+    min-height: 50px;
+    width: 100%;
+    position: fixed;
+    max-width: 100%;
+}
+
+.navbar-contents {
+    position: absolute;
+    right: 5px;
+    width: 70%;
+    height: inherit;
+    top: 25%;
+    /* background-color: #f8f8f8; */
+    display: flex;
+    justify-content: space-between;
+}
+
+a.anchor-refs {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 150%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 15%;
+}
