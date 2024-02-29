@@ -58,7 +58,7 @@ a.anchor-refs:target {
 
 div.img-container {
     position: absolute;
-    width: 20%;
+    width: 30%;
     height: inherit;
     display: flex;
     top: 50%;
@@ -94,22 +94,22 @@ div.page-section{
     width: 100%;
 }
 
-#about-section {
+#story-section {
     background-color: #00ff00;
     width: 100%;
 }
 
-#specs-section {
+#cast-n-crew-section {
     background-color: #ffff00;
     width: 100%;
 }
 
-#pricing-section {
+#gallery-section {
     background-color: #ff00ff;
     width: 100%;
 }
 
-#contact-section {
+#review-section {
     background-color: #0000ff;
     width: 100%;
 }
