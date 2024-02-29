@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movie Cast</title>
+<style>
+  .cast-member {
+    display: none;
+  }
+  .cast-member input:checked + .member-info {
+    display: block;
+  }
+  .nav-arrows {
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  #prev-cast,
+  #next-cast {
+    display: none;
+  }
+  #prev-cast:checked ~ .cast-list .cast-member:last-child,
+  #next-cast:checked ~ .cast-list .cast-member:first-child {
+    display: block;
+  }
+</style>
+</head>
+<body>
+
+<h1>Movie Cast</h1>
+
+<input type="radio" id="prev-cast" name="nav-cast" hidden>
+<label for="prev-cast" class="nav-arrows">&lt;</label>
+
+<input type="radio" id="next-cast" name="nav-cast" hidden>
+<label for="next-cast" class="nav-arrows">&gt;</label>
+
+<div class="cast-list">
+  <div class="cast-member">
+    <!-- Information about Actor 1 -->
+    <p>Actor 1's Bio</p>
+  </div>
+  
+  <div class="cast-member">
+    <!-- Information about Actor 2 -->
+    <p>Actor 2's Bio</p>
+  </div>
+  
+  <!-- Add more cast members as needed -->
+</div>
+
+</body>
+</html>

@@ -90,8 +90,32 @@ div.page-section{
 }
 
 #home-section {
-    background-color: #ff0000;
     width: 100%;
+    background-image: url(../images/dune-background.jpg);
+    background-position: center;
+}
+
+p.movie-description {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-10%, -50%);
+    color: #66280C;
+    font-size: 250%;
+    font-weight: bold;
+    font-family: 'Trebuchet MS';
+    text-align: justify;
+}
+
+p.quote {
+    position: absolute;
+    left: 15%;
+    transform: translate(0%, 50%);
+    color: #66280C;
+    font-size: 500%;
+    font-weight: bold;
+    font-family: 'Trebuchet MS';
+    text-align: justify;
 }
 
 #story-section {
