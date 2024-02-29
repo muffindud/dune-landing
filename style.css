@@ -2,14 +2,14 @@ body {
     min-height: 2000px;
 }
 
-
 nav {
     background-color: #000000;
-    min-height: 100px;
+    min-height: 80px;
     width: 100%;
     position: fixed;
     max-width: 100%;
     overflow: hidden;
+    z-index: 100;
 }
 
 div.navbar-contents {
@@ -37,7 +37,6 @@ a.anchor-refs {
     border: 0;
     border-radius: 10px;    
 }
-
 
 a.anchor-refs:hover {
     /* color: #ff0000; */
@@ -68,4 +67,38 @@ img.logo {
     margin: 0 10%;
 }
 
+#body-content{
+    position: relative;
+    top: 80px;
+    background-color: #ffffff;
+}
 
+div.page-section{
+    position: relative;
+    height: calc(100vh - 80px);
+}
+
+#home {
+    background-color: #ff0000;
+    width: 100%;
+}
+
+#about {
+    background-color: #00ff00;
+    width: 100%;
+}
+
+#specs {
+    background-color: #ffff00;
+    width: 100%;
+}
+
+#pricing {
+    background-color: #ff00ff;
+    width: 100%;
+}
+
+#contact {
+    background-color: #0000ff;
+    width: 100%;
+}
