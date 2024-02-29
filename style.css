@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     min-height: 2000px;
 }
@@ -35,7 +39,7 @@ a.anchor-refs {
     padding: 5% 0;
     text-align: center;
     border: 0;
-    border-radius: 10px;    
+    border-radius: 10px;
 }
 
 a.anchor-refs:hover {
