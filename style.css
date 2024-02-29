@@ -69,6 +69,11 @@ img.logo {
     margin: 0 10%;
 }
 
+div.anchor-pointer {
+    position: relative;
+    top: -80px;
+}
+
 #body-content{
     position: relative;
     top: 80px;
@@ -80,27 +85,27 @@ div.page-section{
     height: calc(100vh - 80px);
 }
 
-#home {
+#home-section {
     background-color: #ff0000;
     width: 100%;
 }
 
-#about {
+#about-section {
     background-color: #00ff00;
     width: 100%;
 }
 
-#specs {
+#specs-section {
     background-color: #ffff00;
     width: 100%;
 }
 
-#pricing {
+#pricing-section {
     background-color: #ff00ff;
     width: 100%;
 }
 
-#contact {
+#contact-section {
     background-color: #0000ff;
     width: 100%;
 }
