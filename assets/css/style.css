@@ -215,18 +215,19 @@ div.gallery-grid img {
 }
 
 div.review-box {
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-    width: 25%;
+    width: 20%;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
     border: 10px solid rgba(255, 255, 255, 0);
 }
 
 div.review-box p.review-author {
-
+    text-align: right;
+    font-size: 150%;
 }
 
 div.review-box p.review-text {
@@ -234,26 +235,33 @@ div.review-box p.review-text {
 }
 
 div.review-box p.review-score {
-
+    text-align: center;
+    font-size: 150%;
 }
 
 #the-guardian {
-
+    top: 10%;
+    left: 10%;
 }
 
 #the-independent {
-
+    top: 5%;
+    right: 30%;
 }
 
 #the-telegraph {
-
+    top: 50%;
+    left: 35%;
 }
 
 #vox {
-
+    top: 35%;
+    right: 5%;
 }
 
 #review-section {
     background-color: #0000ff;
+    background-image: url(../images/dune-background-3.jpg);
+    background-position: center;
     width: 100%;
 }
