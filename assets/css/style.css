@@ -199,7 +199,6 @@ div.gallery-grid {
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
     justify-content: space-around;
-    padding: 5px;
 }
 
 div.gallery-grid img {
