@@ -101,6 +101,8 @@ div.page-section{
     font-size: 200%;
     border-radius: 10px;
     color: #E9CB8E;
+    line-height: 250%;
+    text-align: center;
 }
 
 #get-tickets:hover {
