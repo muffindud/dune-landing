@@ -91,7 +91,7 @@ div.page-section{
 
 #home-section {
     width: 100%;
-    background-image: url(../images/dune-background.jpg);
+    background-image: url(../images/dune-background-1.jpg);
     background-position: center;
 }
 
@@ -112,11 +112,10 @@ p.quote {
 p.movie-description {
     position: absolute;
     top: 50%;
-    left: 70%;
+    left: 65%;
     transform: translate(-10%, -50%);
     color: #66280C;
-    font-size: 250%;
-    font-weight: bold;
+    font-size: 200%;
     font-family: 'Trebuchet MS';
     text-align: justify;
 }
@@ -124,19 +123,28 @@ p.movie-description {
 p.movie-story {
     position: absolute;
     top: 50%;
-    width: 50%;
+    width: 55%;
     margin-left: 10%;
-    margin-right: 40%;
+    margin-right: 25%;
     transform: translate(0, -50%);
     color: #66280C;
-    font-size: 200%;
-    font-weight: bold;
+    font-size: 150%;
     font-family: 'Trebuchet MS';
     text-align: justify;
 }
 
+#book-cover {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(0, -50%);
+    width: 20%;
+    height: auto;
+}
+
 #story-section {
-    background-color: #00ff00;
+    background-color: #A5663A;
+    background-image: url(../images/dune-background-2.jpg);
     width: 100%;
 }
 
