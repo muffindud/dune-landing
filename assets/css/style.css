@@ -202,9 +202,8 @@ div.gallery-grid {
 }
 
 div.gallery-grid img {
-    width: 85%;
+    width: 95%;
     height: auto;
-    /* border-radius: 10px; */
     aspect-ratio: 1/1;
     object-fit: cover;
     padding: 10px;
