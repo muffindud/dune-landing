@@ -86,7 +86,7 @@ div.anchor-pointer {
 
 div.page-section{
     position: relative;
-    height: calc(100vh - 80px);
+    min-height: calc(100vh - 80px);
 }
 
 #home-section {
@@ -150,12 +150,15 @@ p.movie-story {
 
 #cast-n-crew-section {
     background-color: #ffff00;
+    background-image: url(../images/dune-background-3.jpg);
+    background-position: center;
     width: 100%;
 }
 
 ul.cast-list {
+    display: flex;
+    justify-content: space-between;
     list-style-type: none;
-    margin: 0;
     overflow: hidden;
     width: 100%;
     justify-content: space-around;
@@ -164,9 +167,12 @@ ul.cast-list {
 ul.cast-list li {
     float: left;
     padding-top: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     width: 25%;
     text-align: center;
+    margin: 1.5%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
 }
 
 ul.cast-list li img {
@@ -174,6 +180,16 @@ ul.cast-list li img {
     aspect-ratio: 3/4;
     object-fit: cover;
     height: auto;
+}
+
+ul.cast-list li p.cast-n-crew-name {
+    line-height: 150%;
+    color: #E9CB8E
+}
+
+ul.cast-list li p.cast-n-crew-role {
+    line-height: 150%;
+    color: #A5663A;
 }
 
 #gallery-section {
