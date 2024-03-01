@@ -115,6 +115,7 @@ p.movie-description {
     left: 65%;
     transform: translate(-10%, -50%);
     color: #66280C;
+    line-height: 150%;
     font-size: 200%;
     font-family: 'Trebuchet MS';
     text-align: justify;
@@ -122,6 +123,7 @@ p.movie-description {
 
 p.movie-story {
     position: absolute;
+    line-height: 150%;
     top: 50%;
     width: 55%;
     margin-left: 10%;
@@ -222,21 +224,25 @@ div.review-box {
     width: 20%;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
-    border: 10px solid rgba(255, 255, 255, 0);
+    border: 20px solid rgba(255, 255, 255, 0);
 }
 
 div.review-box p.review-author {
     text-align: right;
     font-size: 150%;
+    line-height: 150%;
+    font-weight: bold;
 }
 
 div.review-box p.review-text {
-    font-size: 250%;
+    font-size: 200%;
+    line-height: 125%;
 }
 
 div.review-box p.review-score {
     text-align: center;
     font-size: 150%;
+    line-height: 150%;
 }
 
 #the-guardian {
