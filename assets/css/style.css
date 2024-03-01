@@ -214,6 +214,45 @@ div.gallery-grid img {
     width: 100%;
 }
 
+div.review-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 25%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    border: 10px solid rgba(255, 255, 255, 0);
+}
+
+div.review-box p.review-author {
+
+}
+
+div.review-box p.review-text {
+    font-size: 250%;
+}
+
+div.review-box p.review-score {
+
+}
+
+#the-guardian {
+
+}
+
+#the-independent {
+
+}
+
+#the-telegraph {
+
+}
+
+#vox {
+
+}
+
 #review-section {
     background-color: #0000ff;
     width: 100%;
