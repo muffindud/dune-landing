@@ -153,6 +153,29 @@ p.movie-story {
     width: 100%;
 }
 
+ul.cast-list {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+    justify-content: space-around;
+}
+
+ul.cast-list li {
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    width: 25%;
+    text-align: center;
+}
+
+ul.cast-list li img {
+    width: 50%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    height: auto;
+}
+
 #gallery-section {
     background-color: #ff00ff;
     width: 100%;
