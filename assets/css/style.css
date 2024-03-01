@@ -44,7 +44,7 @@ a.anchor-refs {
 
 a.anchor-refs:hover {
     border: 0;
-    background: linear-gradient(to right, #000000 50%, #ff0000 50%);
+    background: linear-gradient(to right, #000000 50%, #e79b07 50%);
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all 0.5s ease;
@@ -52,8 +52,8 @@ a.anchor-refs:hover {
 
 a.anchor-refs:target {
     color: #ffffff;
-    border: 1px solid #ff0000;
-    background-color: #ff0000;
+    border: 1px solid #e79b07;
+    background-color: #e79b07;
 }
 
 div.img-container {
@@ -89,6 +89,30 @@ div.page-section{
     min-height: calc(100vh - 80px);
 }
 
+#get-tickets {
+    position: absolute;
+    top: 60%;
+    left: 7%;
+    transform: translate(10%, -50%);
+    width: 15%;
+    height: 10%;
+    background-color: #66280C;
+    border: 0;
+    font-size: 200%;
+    border-radius: 10px;
+    color: #E9CB8E;
+}
+
+#get-tickets:hover {
+    background-color: #A5663A;
+    transition: 0.2s;
+}
+
+#get-tickets:active {
+    background-color: #E9CB8E;
+    transition: 0.2s;
+}
+
 #home-section {
     width: 100%;
     background-image: url(../images/dune-background-1.jpg);
@@ -111,9 +135,10 @@ p.quote {
 
 p.movie-description {
     position: absolute;
-    top: 50%;
-    left: 65%;
-    transform: translate(-10%, -50%);
+    top: 40%;
+    right: 60%;
+    left: 5%;
+    transform: translate(10%, -50%);
     color: #66280C;
     line-height: 150%;
     font-size: 200%;
