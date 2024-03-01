@@ -95,6 +95,20 @@ div.page-section{
     background-position: center;
 }
 
+p.quote {
+    position: absolute;
+    top: 3%;
+    color: #66280C;
+    font-size: 300%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-weight: bold;
+    font-family: 'Trebuchet MS';
+    text-align: center;
+    justify-content: space-around;
+}
+
 p.movie-description {
     position: absolute;
     top: 50%;
@@ -107,12 +121,15 @@ p.movie-description {
     text-align: justify;
 }
 
-p.quote {
+p.movie-story {
     position: absolute;
-    left: 15%;
-    transform: translate(0%, 50%);
+    top: 50%;
+    width: 50%;
+    margin-left: 10%;
+    margin-right: 40%;
+    transform: translate(0, -50%);
     color: #66280C;
-    font-size: 500%;
+    font-size: 200%;
     font-weight: bold;
     font-family: 'Trebuchet MS';
     text-align: justify;
