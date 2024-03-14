@@ -257,6 +257,14 @@ div.gallery-grid img {
     object-fit: cover;
 }
 
+#review-section {
+    background-color: #0000ff;
+    background-image: url(../images/dune-background-3.jpg);
+    background-position: center;
+    width: 100%;
+}
+
+
 div.review-box {
     position: absolute;
     display: flex;
@@ -266,13 +274,6 @@ div.review-box {
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
     border: 20px solid rgba(255, 255, 255, 0);
-}
-
-#review-section {
-    background-color: #0000ff;
-    background-image: url(../images/dune-background-3.jpg);
-    background-position: center;
-    width: 100%;
 }
 
 div.review-box p.review-author {
@@ -383,6 +384,45 @@ div.mobile-nav {
     div.cast-n-crew-grid {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
+    }
+
+    div.review-box p.review-author {
+        text-align: left;
+        font-size: 150%;
+        line-height: 150%;
+        font-weight: bold;
+    }
+
+    div.review-box p.review-text {
+        font-size: 125%;
+    }
+
+    div.review-box {
+        position: relative;
+        width: auto;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+    }
+
+    #the-guardian {
+        top: 0;
+        left: 0;
+    }
+
+    #the-independent {
+        top: 0;
+        left: 0;
+    }
+
+    #the-telegraph {
+        top: 0;
+        left: 0;
+    }
+
+    #vox {
+        top: 0;
+        left: 0;
     }
 }
 
