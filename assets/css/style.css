@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    min-height: 2000px;
+    margin: 0;
 }
 
 nav {
@@ -86,28 +86,8 @@ div.anchor-pointer {
 
 div.page-section{
     position: relative;
+    height: fit-content;
     min-height: calc(100vh - 80px);
-}
-
-#get-tickets {
-    position: absolute;
-    top: 60%;
-    left: 7%;
-    transform: translate(10%, -50%);
-    width: 15%;
-    height: 10%;
-    background-color: #66280C;
-    border: 0;
-    font-size: 200%;
-    border-radius: 10px;
-    color: #E9CB8E;
-    line-height: 250%;
-    text-align: center;
-}
-
-#get-tickets:hover {
-    background-color: #A5663A;
-    transition: 0.2s;
 }
 
 #get-tickets:active {
@@ -148,6 +128,34 @@ p.movie-description {
     text-align: justify;
 }
 
+#get-tickets {
+    position: absolute;
+    top: 70%;
+    left: 7%;
+    transform: translate(10%, -50%);
+    min-width: 200px;
+    width: 15%;
+    height: 10%;
+    background-color: #66280C;
+    border: 0;
+    font-size: 200%;
+    border-radius: 10px;
+    color: #E9CB8E;
+    line-height: 250%;
+    text-align: center;
+}
+
+#get-tickets:hover {
+    background-color: #A5663A;
+    transition: 0.2s;
+}
+
+#story-section {
+    background-color: #A5663A;
+    background-image: url(../images/dune-background-2.jpg);
+    width: 100%;
+}
+
 p.movie-story {
     position: absolute;
     line-height: 150%;
@@ -171,12 +179,6 @@ p.movie-story {
     height: auto;
 }
 
-#story-section {
-    background-color: #A5663A;
-    background-image: url(../images/dune-background-2.jpg);
-    width: 100%;
-}
-
 #cast-n-crew-section {
     background-color: #ffff00;
     background-image: url(../images/dune-background-3.jpg);
@@ -184,41 +186,59 @@ p.movie-story {
     width: 100%;
 }
 
-ul.cast-list {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    overflow: hidden;
+div.cast-n-crew-grid {
+    display: grid;
     width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
     justify-content: space-around;
 }
 
-ul.cast-list li {
-    float: left;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 25%;
-    text-align: center;
-    margin: 1.5%;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-}
-
-ul.cast-list li img {
+div.cast-n-crew-grid img {
     width: 50%;
     aspect-ratio: 3/4;
     object-fit: cover;
     height: auto;
 }
 
-ul.cast-list li p.cast-n-crew-name {
-    line-height: 150%;
-    color: #E9CB8E
+div.cast-n-crew-grid div.cast-n-crew-item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 1.5%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
 }
 
-ul.cast-list li p.cast-n-crew-role {
+div.cast-n-crew-grid div.text-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+div.cast-n-crew-grid p.cast-n-crew-name {
     line-height: 150%;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #E9CB8E;
+    font-weight: bold;
+    font-family: 'Trebuchet MS';
+}
+
+div.cast-n-crew-grid p.cast-n-crew-role {
+    line-height: 150%;
+    padding-left: 5px;
+    padding-right: 5px;
     color: #A5663A;
+    font-weight: bold;
+    font-family: 'Trebuchet MS';
+}
+
+#gallery-section {
+    background-color: #000000;
+    width: 100%;
 }
 
 div.gallery-grid {
@@ -231,17 +251,19 @@ div.gallery-grid {
 }
 
 div.gallery-grid img {
-    width: 95%;
+    width: 100%;
     height: auto;
     aspect-ratio: 1/1;
     object-fit: cover;
-    padding: 10px;
 }
 
-#gallery-section {
-    background-color: #000000;
+#review-section {
+    background-color: #0000ff;
+    background-image: url(../images/dune-background-3.jpg);
+    background-position: center;
     width: 100%;
 }
+
 
 div.review-box {
     position: absolute;
@@ -292,9 +314,115 @@ div.review-box p.review-score {
     right: 5%;
 }
 
-#review-section {
-    background-color: #0000ff;
-    background-image: url(../images/dune-background-3.jpg);
-    background-position: center;
+div.mobile-nav {
+    display: none;
+    position: relative;
     width: 100%;
+    height: 100%;
+    background: #000000;
+    color: #ffffff;
+    transition: top 0.3s ease;
 }
+
+@media only screen and (max-width: 768px) {
+    div.navbar-contents {
+        display: none;
+    }
+
+    img.logo {
+        width: 100%;
+    }
+
+    div.mobile-nav {
+        display: block;
+    }
+
+    p.quote {
+        position: relative;
+        font-size: 200%;
+        padding-top: 5%;
+        padding-bottom: 10%;
+    }
+
+    p.movie-description {
+        position: relative;
+        left: 0;
+        padding-left: 3%;
+        padding-right: 3%;
+        transform: translate(0, 0);
+        font-size: 150%;
+    }
+
+    #get-tickets {
+        left: 50%;
+        width: 30%;
+        transform: translate(-50%, -50%);
+    }
+
+    p.movie-story {
+        position: relative;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        transform: translate(0, 0);
+        font-size: 100%;
+        padding-bottom: 5%;
+    }
+
+    #book-cover {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 40%;
+    }
+
+    div.gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    div.cast-n-crew-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    div.review-box p.review-author {
+        text-align: left;
+        font-size: 150%;
+        line-height: 150%;
+        font-weight: bold;
+    }
+
+    div.review-box p.review-text {
+        font-size: 125%;
+    }
+
+    div.review-box {
+        position: relative;
+        width: auto;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+    }
+
+    #the-guardian {
+        top: 0;
+        left: 0;
+    }
+
+    #the-independent {
+        top: 0;
+        left: 0;
+    }
+
+    #the-telegraph {
+        top: 0;
+        left: 0;
+    }
+
+    #vox {
+        top: 0;
+        left: 0;
+    }
+}
+
