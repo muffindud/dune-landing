@@ -89,27 +89,6 @@ div.page-section{
     min-height: calc(100vh - 80px);
 }
 
-#get-tickets {
-    position: absolute;
-    top: 60%;
-    left: 7%;
-    transform: translate(10%, -50%);
-    width: 15%;
-    height: 10%;
-    background-color: #66280C;
-    border: 0;
-    font-size: 200%;
-    border-radius: 10px;
-    color: #E9CB8E;
-    line-height: 250%;
-    text-align: center;
-}
-
-#get-tickets:hover {
-    background-color: #A5663A;
-    transition: 0.2s;
-}
-
 #get-tickets:active {
     background-color: #E9CB8E;
     transition: 0.2s;
@@ -146,6 +125,28 @@ p.movie-description {
     font-size: 200%;
     font-family: 'Trebuchet MS';
     text-align: justify;
+}
+
+#get-tickets {
+    position: absolute;
+    top: 70%;
+    left: 7%;
+    transform: translate(10%, -50%);
+    min-width: 200px;
+    width: 15%;
+    height: 10%;
+    background-color: #66280C;
+    border: 0;
+    font-size: 200%;
+    border-radius: 10px;
+    color: #E9CB8E;
+    line-height: 250%;
+    text-align: center;
+}
+
+#get-tickets:hover {
+    background-color: #A5663A;
+    transition: 0.2s;
 }
 
 p.movie-story {
@@ -320,6 +321,27 @@ div.mobile-nav {
 
     div.mobile-nav {
         display: block;
+    }
+
+    p.quote {
+        position: relative;
+        font-size: 200%;
+        padding-top: 5%;
+        padding-bottom: 10%;
+    }
+
+    p.movie-description {
+        position: relative;
+        padding-left: 3%;
+        padding-right: 3%;
+        transform: translate(0, 0);
+        font-size: 150%;
+    }
+
+    #get-tickets {
+        left: 50%;
+        width: 30%;
+        transform: translate(-50%, -50%);
     }
 }
 
