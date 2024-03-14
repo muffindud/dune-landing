@@ -332,6 +332,7 @@ div.mobile-nav {
 
     p.movie-description {
         position: relative;
+        left: 0;
         padding-left: 3%;
         padding-right: 3%;
         transform: translate(0, 0);
