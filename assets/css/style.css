@@ -195,46 +195,37 @@ div.cast-n-crew-grid {
     justify-content: space-around;
 }
 
-div.cast-n-crew-grid img {
+img.cast-n-crew-img {
     width: 50%;
     aspect-ratio: 3/4;
     object-fit: cover;
     height: auto;
 }
 
-div.cast-n-crew-grid div.cast-n-crew-item {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
-    margin: 1.5%;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-}
-
-div.cast-n-crew-grid div.text-box {
+/* div.cast-n-crew-grid div.text-box {
     background-color: rgba(0, 0, 0, 0.5);
     width: fit-content;
     margin: 0 auto;
     border-radius: 10px;
-}
+} */
 
-div.cast-n-crew-grid p.cast-n-crew-name {
+/* div.cast-n-crew-grid p.cast-n-crew-name {
     line-height: 150%;
     padding-left: 5px;
     padding-right: 5px;
     color: #E9CB8E;
     font-weight: bold;
     font-family: 'Trebuchet MS';
-}
+} */
 
-div.cast-n-crew-grid p.cast-n-crew-role {
+/* div.cast-n-crew-grid p.cast-n-crew-role {
     line-height: 150%;
     padding-left: 5px;
     padding-right: 5px;
     color: #A5663A;
     font-weight: bold;
     font-family: 'Trebuchet MS';
-}
+} */
 
 #gallery-section {
     background-color: #000000;
