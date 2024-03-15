@@ -327,10 +327,10 @@ div.mobile-nav {
 div.mascot {
     position: fixed;
     z-index: 100;
-    right: 0;
     bottom: 0;
-    animation: mascot-animation 8s infinite;
-    animation-direction: normal;
+    right: 0;
+    animation: mascot-animation 3s infinite;
+    animation-delay: 1s;
 }
 
 img.mascot-img {
@@ -361,22 +361,17 @@ div.mascot:hover {
 @keyframes mascot-animation {
     0% {
         transform: translate3d(0, 0, 0);
-    }
-
-    25% {
-        transform: translate3d(calc(-100vw + 250px), 0, 0);
+        animation-timing-function: cubic-bezier(.11,.63,.49,.95);
     }
 
     50% {
-        transform: translate3d(calc(-100vw + 250px), calc(-100vh + 250px), 0);
-    }
-
-    75% {
-        transform: translate3d(0, calc(-100vh + 250px), 0);
+        transform: translate3d(0, calc(-100vh + 250px + 80px), 0);
+        animation-timing-function: cubic-bezier(.73,.1,.96,.45);
     }
 
     100% {
         transform: translate3d(0, 0, 0);
+        /* animation-timing-function: cubic-bezier(.11,.63,.49,.95); */
     }
 }
 
