@@ -319,9 +319,13 @@ div.mascot {
     position: fixed;
     z-index: 100;
     bottom: 0;
-    right: 0;
-    animation: mascot-animation 3s infinite;
-    animation-delay: 1s;
+    right: -250px;
+    /* animation: mascot-init 1s, mascot-animation 3s infinite;
+    animation-delay: mascot-init 1s; */
+    animation-name: mascot-init, mascot-animation;
+    animation-duration: 1s, 3s;
+    animation-delay: 1s, 2s;
+    animation-iteration-count: 1, infinite;
 }
 
 img.mascot-img {
@@ -349,20 +353,29 @@ div.mascot:hover {
     animation-play-state: paused;
 }
 
-@keyframes mascot-animation {
+@keyframes mascot-init {
     0% {
         transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-250px, 0, 0);
+    }
+}
+
+@keyframes mascot-animation {
+    0% {
+        transform: translate3d(-250px, 0, 0);
         animation-timing-function: cubic-bezier(.11,.63,.49,.95);
     }
 
     50% {
-        transform: translate3d(0, calc(-100vh + 250px + 80px), 0);
+        transform: translate3d(-250px, calc(-100vh + 250px + 80px), 0);
         animation-timing-function: cubic-bezier(.73,.1,.96,.45);
     }
 
     100% {
-        transform: translate3d(0, 0, 0);
-        /* animation-timing-function: cubic-bezier(.11,.63,.49,.95); */
+        transform: translate3d(-250px, 0, 0);
     }
 }
 
