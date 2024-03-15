@@ -475,26 +475,4 @@ div.mascot:hover {
         top: 0;
         left: 0;
     }
-
-    @keyframes mascot-animation {
-        0% {
-            transform: translate3d(0, 0, 0);
-        }
-    
-        25% {
-            transform: translate3d(calc(-100vw + 250px), 0, 0);
-        }
-    
-        50% {
-            transform: translate3d(calc(-100vw + 250px), calc(-100vh + 250px), 0);
-        }
-    
-        75% {
-            transform: translate3d(0, calc(-100vh + 250px), 0);
-        }
-    
-        100% {
-            transform: translate3d(0, 0, 0);
-        }
-    }
 }
