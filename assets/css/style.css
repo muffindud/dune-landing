@@ -186,6 +186,37 @@ p.movie-story {
     width: 100%;
 }
 
+div.cast-n-crew-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+div.cast-n-crew-item div.text-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: fit-content;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+div.cast-n-crew-item p.cast-n-crew-name {
+    line-height: 150%;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #E9CB8E;
+    font-weight: bold;
+    font-family: 'Trebuchet MS';
+}
+
+div.cast-n-crew-item p.cast-n-crew-role {
+    line-height: 150%;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #A5663A;
+    font-weight: bold;
+    font-family: 'Trebuchet MS';
+}
+
 img.cast-n-crew-img {
     width: 50%;
     aspect-ratio: 3/4;
